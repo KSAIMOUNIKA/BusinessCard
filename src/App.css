@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Performance optimizations */
+* {
+  will-change: auto;
+}
+
+/* Input focus styles - no animations */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid rgba(102, 126, 234, 0.5);
+  outline-offset: 2px;
+}
+
+/* Button styles */
+button {
+  font-family: inherit;
+}
+#container {
+  width: 450px;
+  color: white;
+  padding: 2em;
+  max-height: 250px;
+  border-radius: 20px;
+}
+.section1 {
+  margin: 1.5em 0;
+}
+.section1 h1 {
+  font-size: 40px;
+  margin: 0;
+}
+.section2 {
+  padding-top: 20px;
+  border-top: 3px dotted white;
+  display: flex;
+}
+#details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+#buttons {
+  width: 40%;
+}
+
+#buttons button {
+  background-color: white;
+  border: 0;
+  width: 80px;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 5px;
+}
+
+form input {
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 1em;
+  border: 0;
+  box-shadow: 0 0 5px rgb(87, 111, 119);
+  margin: 1em 0.5em;
+}
+
+form button {
+  font-size: 1.25em;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: rgb(108, 204, 255);
+  border: 0;
+}
+
+form button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(49, 97, 255);
+}
+
+/* Header */
+.header-3d {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+.main-3d {
+  min-height: calc(100vh - 100px);
+  padding: 20px;
+}
